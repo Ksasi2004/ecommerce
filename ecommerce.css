@@ -1,0 +1,320 @@
+*{
+    padding:0;
+    margin:0;
+    cursor:pointer;
+}
+
+/* navbar1 query*/
+
+#nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:10px;
+    margin:5px;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+  
+}
+
+#div1 ul{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    margin:5px;
+    padding:10px;
+}
+
+#div1 li:hover{
+    text-decoration: underline;
+    cursor: pointer;
+    color:blueviolet;
+}
+.bar{
+    display:none;
+}
+
+
+/* Media Query */
+@media screen and (max-width:700px){
+    .bar{
+        display:block;
+    }
+    #div1 ul{
+        display:none;
+    }
+    #side-navbar{
+        display:block;
+    }
+    #section2content{
+        flex-direction: column;
+    }
+    
+}
+   
+
+
+/* side-navbar query */
+#side-navbar{
+    background-color:grey;
+    width:40%;
+    position:fixed;
+    top:0;
+    left:-50%;
+    height:100%;
+    transition: 1.5s;
+}
+#div2 ul{
+    color:white;
+    padding:5px;
+    margin-bottom: 35px; /*or use line-height*/
+   
+    
+}
+#side-navbar p{
+    padding:20px;
+   
+}
+#div2 p:hover{
+    text-decoration: underline;
+    color:black;
+    cursor:pointer;
+}
+#side-navbar{
+    transition: 2s;
+}
+
+/*header*/
+#header{
+    display:flex;
+    gap:50px;
+    border:none;
+    padding:50px;
+    justify-content:center
+    
+  
+}
+#header-text{
+    padding:20px;
+    line-height: 1.5;
+}
+#shopnow{
+    padding:5px;
+    margin-top:12px;
+    color:white;
+    background-color: black;
+    border:none;
+}
+#section2content{
+    display:flex;
+    justify-content:space-between;
+    text-align: center;
+    padding:20px;
+    gap:20px;
+    
+    
+}
+#section2content div{
+    background-color: skyblue;
+    border-radius: 5px;
+    padding:10px;
+    margin-bottom:2%;
+}
+#section2content p{
+    padding:10px;
+    margin-top: 10px;
+}
+#section2{
+    padding:20px;
+    margin-top:5px;
+    margin-top:2%;
+} 
+
+/* product section */
+#form{
+    padding:5px;
+    border:solid;
+    width:60%;
+    justify-content: space-between;
+    display:flex;
+    text-align: center;
+    align-items: center;
+    margin:auto;
+    margin-top:20px;
+    border-radius: 25px;
+    padding:5px;
+
+}
+    
+#search-input{
+    border:none;
+    outline:none;
+    padding:5px;
+    
+   
+}
+#images{
+    display: flex; /* 1. ellathayum oru line la kondu varum da */
+    flex-wrap: wrap; /* 2. idam illa na adutha line ku thallum da, ithu than 3-3 ah varum trick da */
+    gap: 20px; /* 3. image ku naduvula gap vidum da */
+    justify-content: center; /* 4. full row ah naduvula vekkum da */
+    padding: 30px;
+}
+
+#images div{
+    width: 30%; /* 5. oru row la 3 image varanum na 30% than correct da (100% / 3) */
+    text-align: center;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+#images img{
+    width: 100%; /* 6. div enna width-o atha full ah eduthukkum da */
+    height: 250px; /* 7. ella image um same height varum da */
+    object-fit: contain; /* 8. image stretch aagama azhaga crop aayidum da, ithu romba mukkiyam da */
+    border:none;
+}
+html{
+    scroll-behavior: smooth;
+}
+#final{
+    margin-top:10px;
+    padding:10px;
+    margin-left:10px;
+    background-color:black;
+    color:whitesmoke;
+    border-radius: 5px;
+    width:100%;
+    height:30%;
+    
+}
+#sm-icons{
+    padding:3px;
+    margin-top:3px;
+}
+#footer p{
+    margin-top:5px;
+}
+
+/* contact css*/
+/* CONTACT SECTION CSS - Trendcart */
+#contact{
+    padding: 60px 8%;
+    background-color: #f8f8f8;
+    font-family: sans-serif;
+}
+
+.contact-header{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.contact-header h2{
+    font-size: 36px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.contact-header p{
+    color: #666;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.contact-container{
+    display: flex;
+    gap: 50px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact-info, .contact-form{
+    flex: 1;
+    min-width: 300px;
+    background-color: white;
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.08);
+}
+
+.contact-info h3, .contact-form h3{
+    margin-bottom: 25px;
+    font-size: 22px;
+    border-left: 4px solid black;
+    padding-left: 12px;
+}
+
+.info-box{
+    display: flex;
+    gap: 15px;
+    margin-bottom: 30px;
+    align-items: flex-start;
+}
+
+.info-box i{
+    background-color: black;
+    color: white;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 18px;
+}
+
+.info-box h4{
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.info-box p{
+    color: #555;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* Form Design */
+.contact-form form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form input, .contact-form textarea{
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.contact-form input:focus, .contact-form textarea:focus{
+    border-color: black;
+}
+
+.contact-form button{
+    background-color: black;
+    color: white;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact-form button:hover{
+    background-color: #333;
+    transform: scale(1.02);
+}
+
+/* Mobile Responsive da */
+@media (max-width: 768px){
+    .contact-container{
+        flex-direction: column;
+    }
+}
